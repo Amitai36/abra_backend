@@ -1,7 +1,8 @@
 import axios from "axios";
 import { Request, Response } from "express";
-import { Weather } from "../types/weather";
+
 import { weather } from "../config";
+import { Weather } from "../types/weather";
 
 
 export const getWeather = async (req: Request, res: Response) => {
