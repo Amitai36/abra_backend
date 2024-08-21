@@ -6,7 +6,6 @@ import { Place, FilteringType } from "../types/place";
 export const getPlace = async (req: Request<{ filter: FilteringType }>, res: Response) => {
     try {
         const { filter } = req.params
-        console.log(filter)
         if (filter === "all") {
             const place =await PlaceModule.find().sort("Creation_timestamp")
             res.json(place).status(200)
