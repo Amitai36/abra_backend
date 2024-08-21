@@ -5,7 +5,7 @@ const placeSchema = new Schema({
     Creation_timestamp:Date,
     Type:String,
     Address:String
-})
+}, {timestamps:true})
 
 
 export const PlaceModule = model("places", placeSchema)

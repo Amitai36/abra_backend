@@ -5,3 +5,5 @@ export interface Place{
     Type:"Restaurant"|"Hotle"|"Park",
     Address:string
 }
+
+export type FilteringType =  "Restaurant"|"Hotle"|"Park"|"all"
